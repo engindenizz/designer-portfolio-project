@@ -1,0 +1,228 @@
+#main-first-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.navbar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.nav-menu ul {
+  display: flex;
+  align-items: center;
+  margin: 0 2rem;
+}
+
+.nav-menu ul li {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin: 0 2rem;
+}
+
+.navbar .logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 2rem;
+}
+
+.mainpage-container {
+  display: flex;
+  height: 60vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.mainpage-primary-title {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.mainpage-button {
+  margin-top: 2.5rem;
+}
+
+.mainpage-button button {
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  border-radius: 1.6rem;
+}
+
+.line-overpage {
+  display: flex;
+  align-items: end;
+  margin: 3rem 0 0 0;
+  justify-content: center;
+}
+
+.line {
+  width: 95%;
+  height: 0.06rem;
+  background: var(--gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.line i {
+  font-size: 1.5rem;
+  color: var(--neutral-600);
+}
+
+#works {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.works-content {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "header header"
+    "left right "
+    "left right";
+  text-align: center;
+  gap: 7rem;
+  row-gap: 2rem;
+  align-items: center;
+  position: relative;
+}
+
+.works-title {
+  grid-area: header;
+  text-align: left;
+  font-size: 1.8rem;
+}
+
+.works-content-left {
+  grid-area: left;
+}
+
+.works-content-right {
+  grid-area: right;
+  position: absolute;
+  top: 5rem;
+}
+
+.project-card {
+  margin-bottom: 6rem;
+}
+
+.project-card h4 {
+  margin-top: 1.5rem;
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2rem;
+  letter-spacing: 0.015rem;
+}
+
+.project-card p {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.75rem;
+}
+
+.btn-works img {
+  width: 1.5rem;
+  display: inline-block;
+  font-size: 0.875rem;
+  padding-left: 0.25rem;
+}
+
+.btn-works {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1rem 1rem 1.25rem;
+  background-color: var(--neutral-900);
+  line-height: 1.25rem;
+}
+
+#services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7.5rem 7rem;
+}
+
+.container-services {
+  width: auto;
+  height: 35rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-services-bg {
+  background-color: var(--neutral-600);
+  display: flex;
+  justify-content: space-between;
+  width: 76rem;
+  height: 100%;
+}
+
+.services-info {
+  display: flex;
+  width: 30rem;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 4.5rem;
+}
+
+.services-info h3 {
+  width: 100%;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 3.75rem;
+  letter-spacing: 0.075rem;
+}
+.services-info p {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75rem;
+}
+
+.services-info button {
+  margin-top: 2rem;
+  padding: 1.25rem;
+  border-radius: 2rem;
+}
+.service-card {
+  width: 18.75rem;
+  height: 16.5rem;
+  background-color: var(--white);
+}
+
+.services-card {
+  position: relative;
+}
+
+.card-1 {
+  position: absolute;
+  top: 8rem;
+  left: -30rem;
+}
+
+.card-2 {
+  grid-row: 2 / span 2;
+  border: 2px solid black;
+}
+
+.card-3 {
+  grid-row: 4 / span 2;
+  border: 2px solid black;
+}
