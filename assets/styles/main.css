@@ -63,7 +63,7 @@
 }
 
 .line {
-  width: 95%;
+  width: 100%;
   height: 0.06rem;
   background: var(--gradient);
   display: flex;
@@ -158,19 +158,20 @@
 }
 
 .container-services {
-  width: auto;
+  width: 100%;
   height: 35rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .container-services-bg {
-  background-color: var(--neutral-600);
+  background-color: var(--secondary-color);
   display: flex;
   justify-content: space-between;
-  width: 76rem;
-  height: 100%;
+  width: 100%;
+  height: 80%;
 }
 
 .services-info {
@@ -202,27 +203,179 @@
   border-radius: 2rem;
 }
 .service-card {
-  width: 18.75rem;
-  height: 16.5rem;
+  width: 21rem;
+  height: 19rem;
   background-color: var(--white);
 }
 
 .services-card {
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  overflow: visible;
+  gap: 3rem;
+  top: 0;
+  right: 1rem;
+  position: absolute;
 }
 
 .card-1 {
   position: absolute;
-  top: 8rem;
-  left: -30rem;
+  right: 40rem;
+  top: 7rem;
+  box-shadow: 24px 24px 40px -12px rgba(28, 44, 64, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 1rem;
 }
 
 .card-2 {
-  grid-row: 2 / span 2;
-  border: 2px solid black;
+  position: absolute;
+  right: 17rem;
+  top: -5rem;
+  box-shadow: 24px 24px 40px -12px rgba(28, 44, 64, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 1rem;
 }
 
 .card-3 {
-  grid-row: 4 / span 2;
-  border: 2px solid black;
+  position: absolute;
+  right: 17rem;
+  top: 16rem;
+  box-shadow: 24px 24px 40px -12px rgba(28, 44, 64, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.card-1 i {
+  color: #74d1ef;
+  font-size: 2rem;
+}
+
+.card-1 h5 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: 0.125rem;
+}
+
+.card-1 p {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.125rem;
+}
+
+.card-2 h5 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: 0.125rem;
+}
+
+.card-2 p {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.125rem;
+}
+
+.card-3 h5 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: 0.125rem;
+}
+
+.card-3 p {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.125rem;
+}
+
+.card-2 i {
+  color: #b59b79;
+  font-size: 2rem;
+}
+
+.card-3 i {
+  color: #5e3bee;
+  font-size: 2rem;
+}
+
+.logos {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.logos img {
+  width: 128px;
+  height: 48px;
+}
+
+.line h5 {
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0.12rem;
+}
+
+#about {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 2rem;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "content img"
+    "content img";
+}
+
+.about-content {
+  grid-area: content;
+}
+
+.about-exper img {
+  width: 385px;
+  height: 512px;
+}
+
+.about-exper {
+  display: flex;
+}
+
+.dates {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem 0 1rem 0;
+}
+
+.dates-1,
+.dates-2,
+.dates-3 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+  margin: 1.5rem;
+  width: 80%;
+}
+
+.dates-1 h3,
+.dates-2 h3,
+.dates-3 h3 {
+  font-size: 3rem;
 }
